@@ -1,6 +1,6 @@
 // A simple module with no dependencies
-angular.module("templateModule", ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'menuModule'])
-    .controller('TemplateCtrl', function ($scope, $timeout, $mdSidenav, $location) {
+angular.module("templateModule", ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'menuModule', 'topnavModule'])
+    .controller('TemplateCtrl', function ($scope, $timeout, $mdSidenav) {
         $scope.toggleLeft = buildToggler('left');
 
         $scope.name = "asdasd";

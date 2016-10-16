@@ -26,39 +26,45 @@ route.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'modules/register/login.html',
             controller: 'LoginCtrl',
             controllerAs: 'c'
-        });
-    //.state('dashboard', {
-    //    url: '/dashboard',
-    //    views: {
-    //        '': {
-    //            templateUrl: 'modules/app/dashboard/dashboard.html',
-    //            controller: 'DashboardCtrl',
-    //            controllerAs: 'c',
-    //        },
-    //        'columnTwo@dashboard': {
-    //            templateUrl: 'modules/app/dashboard/view1.html'
-    //            //controller: 'scotchController'
-    //        }
-    //    }
-    //
-    //})
-    //.state('dashboard.view2', {
-    //    url: '/dashboard.view2',
-    //    views: {
-    //        '': {
-    //            templateUrl: 'modules/app/dashboard/dashboard.html',
-    //            controller: 'DashboardCtrl',
-    //            controllerAs: 'c',
-    //        },
-    //        'columnTwo@dashboard': {
-    //            templateUrl: 'modules/app/dashboard/view2.html'
-    //            //controller: 'scotchController'
-    //        }
-    //    }
-    //
-    //});
+        })
+        .state('dashboard', {
+            url: '/dashboard',
+            views: {
+                '': {
+                    templateUrl: 'modules/base/template.html',
+                    controller: 'TemplateCtrl',
+                    controllerAs: 'c'
+                },
+                'content@dashboard': {
+                    templateUrl: 'modules/dashboard/dashboard.html'
+                    //controller: 'scotchController'
+                },
+                'menu@dashboard': {
+                    templateUrl: 'modules/menu/menu.html',
+                    controller: 'MenuCtrl'
+                }
+            }
 
-    //$stateProvider.state(aboutState);
+        })
+        .state('table', {
+            url: '/table',
+            views: {
+                '': {
+                    templateUrl: 'modules/base/template.html',
+                    controller: 'TemplateCtrl',
+                    controllerAs: 'c'
+                },
+                'content@table': {
+                    templateUrl: 'modules/table/table.html'
+                    //controller: 'scotchController'
+                },
+                'menu@table': {
+                    templateUrl: 'modules/menu/menu.html',
+                    controller: 'MenuCtrl'
+                }
+            }
+
+        });
 });
 
 

@@ -1,0 +1,44 @@
+<div class="header" style="background-color: red">
+  <p>Main Page</p>
+</div>
+
+
+<div class="menu">
+  <button class="btn btn-default" id="toggle-sidebar" type="button" ng-click="toggleLeft()">
+    &#9776;AA
+  </button>
+
+  <md-sidenav class="md-sidenav-left" md-component-id="left"
+              md-disable-backdrop md-whiteframe="4" md-is-open="false"
+              md-is-locked-open="$mdMedia('min-width: 600px')">
+
+    <md-toolbar class="md-theme-indigo">
+      <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
+    </md-toolbar>
+
+    <md-content layout-margin>
+      <div ui-view="menu"></div>
+    </md-content>
+
+  </md-sidenav>
+
+</div>
+
+
+<md-content flex layout-padding class="mainContent">
+
+
+  <button ng-click="toggleLeft()">
+    BBBBBBBBBBBB
+  </button>
+
+  <div style="background-color: blue">
+    <div ui-view="content"></div>
+  </div>
+
+
+</md-content>
+
+
+
+

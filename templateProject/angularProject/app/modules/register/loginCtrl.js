@@ -1,4 +1,4 @@
-var myApp = angular.module('loginModule', ['AuthService']);
+var myApp = angular.module('loginModule', ['AuthService', 'dashboardModule']);
 
 myApp.controller('LoginCtrl', ['$scope', 'UserLogged', '$state', function ($scope, UserLogged, $state) {
 
@@ -8,7 +8,7 @@ myApp.controller('LoginCtrl', ['$scope', 'UserLogged', '$state', function ($scop
         console.log("button");
     }
 
-    $scope.dashboardButton = function () {
+    $scope.loginButton = function () {
         console.log("button");
         var user = {};
         user.name = 'John Doe';

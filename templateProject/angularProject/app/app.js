@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('myApp', ['ui.router', 'routeModule', 'loginModule']);
+angular.module('myApp', ['ui.router', 'routeModule', 'loginModule', 'templateModule']);

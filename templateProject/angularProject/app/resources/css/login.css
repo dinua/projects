@@ -6043,6 +6043,11 @@ a.text-danger:focus, a.text-danger:hover {
     background-color: #0275d8 !important;
 }
 
+.bg-indigo {
+    color: #fff !important;
+    background-color: #3f51b5 !important;
+}
+
 a.bg-primary:focus, a.bg-primary:hover {
     background-color: #025aa5;
 }

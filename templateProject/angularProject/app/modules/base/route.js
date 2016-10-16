@@ -36,8 +36,8 @@ route.config(function ($stateProvider, $urlRouterProvider) {
                     controllerAs: 'c'
                 },
                 'content@dashboard': {
-                    templateUrl: 'modules/dashboard/dashboard.html'
-                    //controller: 'scotchController'
+                    templateUrl: 'modules/pages/dashboard/dashboard.html',
+                    controller: 'DashboardCtrl'
                 },
                 'menu@dashboard': {
                     templateUrl: 'modules/menu/menu.html',
@@ -55,8 +55,8 @@ route.config(function ($stateProvider, $urlRouterProvider) {
                     controllerAs: 'c'
                 },
                 'content@table': {
-                    templateUrl: 'modules/table/table.html'
-                    //controller: 'scotchController'
+                    templateUrl: 'modules/pages/table/table.html',
+                    controller: 'TableCtrl'
                 },
                 'menu@table': {
                     templateUrl: 'modules/menu/menu.html',

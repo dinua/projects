@@ -1,21 +1,21 @@
-.list-group-item2 {
+.menu-item {
     position: relative;
     display: block;
     padding: .75rem 1.25rem;
-    margin-bottom: -1px;
-    background-color: #222222;
-    /*border: 1px solid #ddd;*/
+    margin-bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
-a.list-group-item2,
-button.list-group-item2 {
+a.menu-item,
+button.menu-item {
     width: 100%;
-    color: #ffffff;
+    color: #555;
     text-align: inherit;
-    border: none;
+    /*border: none;*/
 }
 
-button.list-group-item2:focus {
+button.menu-item:focus {
     color: #0f7864;
     text-decoration: none;
     border: none;
@@ -24,7 +24,7 @@ button.list-group-item2:focus {
     /*background-color: #f5f5f5;*/
 }
 
-button.list-group-item2.selected {
+button.menu-item.selected {
     color: #0f7864;
     text-decoration: none;
     border: none;
@@ -33,9 +33,9 @@ button.list-group-item2.selected {
     /*background-color: #f5f5f5;*/
 }
 
-a.list-group-item2:hover,
-button.list-group-item2:hover {
-    color: #0f7864;
+a.menu-item:hover,
+button.menu-item:hover {
+    color: #555;
     text-decoration: none;
     background-color: #f5f5f5;
 }

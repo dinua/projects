@@ -31,16 +31,19 @@
     background-color: #222222;
 }
 
-.menu {
+.menu2 {
     width: 20%;
+    height: 100%;
     float: left;
     padding: 15px;
-    border: 5px solid blue;
-    background-color: #222222;
+    margin-top: 10px;
+    /*border: 5px solid blue;*/
+    /*background-color: #222222;*/
     /*background-color: blue;*/
 }
 
 .mainContent {
+
     width: 80%;
     float: left;
     padding: 35px;

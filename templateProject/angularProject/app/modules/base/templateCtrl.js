@@ -1,5 +1,5 @@
 // A simple module with no dependencies
-angular.module("templateModule", ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'menuModule', 'tableModule'])
+angular.module("templateModule", ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'menuModule'])
     .controller('TemplateCtrl', function ($scope, $timeout, $mdSidenav, $location) {
         $scope.toggleLeft = buildToggler('left');
 

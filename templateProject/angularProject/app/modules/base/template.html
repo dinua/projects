@@ -3,7 +3,7 @@
 </div>
 
 
-<div class="menu">
+<div class="menu2">
   <button class="btn btn-default" id="toggle-sidebar" type="button" ng-click="toggleLeft()">
     &#9776;AA
   </button>
@@ -13,11 +13,12 @@
               md-is-locked-open="$mdMedia('min-width: 600px')">
 
     <md-toolbar class="md-theme-indigo">
-      <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
+      <h1 class="md-toolbar-tools">Menu</h1>
     </md-toolbar>
 
     <md-content layout-margin>
-      <div ui-view="menu"></div>
+      <div ui-view="menu">
+      </div>
     </md-content>
 
   </md-sidenav>
@@ -27,18 +28,9 @@
 
 <md-content flex layout-padding class="mainContent">
 
-
-  <button ng-click="toggleLeft()">
-    BBBBBBBBBBBB
-  </button>
-
-  <div style="background-color: blue">
+  <div>
     <div ui-view="content"></div>
   </div>
 
 
 </md-content>
-
-
-
-

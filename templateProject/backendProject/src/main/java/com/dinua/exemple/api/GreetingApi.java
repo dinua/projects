@@ -5,11 +5,13 @@ package com.dinua.exemple.api;
  */
 
 import com.dinua.exemple.business.ExampleService;
+import com.dinua.exemple.dtos.User;
 import org.springframework.stereotype.Component;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import java.util.List;
 
 @Component
 @Path("/hello")
@@ -24,6 +26,13 @@ public class GreetingApi {
     @GET
     @Produces("application/json")
     public String greeting() {
-        return exampleService.getText();
+
+        List<User> users = exampleService.findAll();
+        StringBuilder stringBuilder = new StringBuilder();
+        for (User user : users) {
+            stringBuilder.append(user.toString()).append("  ||  ");
+        }
+
+        return exampleService.getText() + stringBuilder.toString();
     }
 }
